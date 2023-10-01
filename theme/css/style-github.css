@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.content-main {
+    margin: 30px;
+}
+
+.content-main .project {
+    border: 2px solid #ff4321;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+    border-radius: 6px;
+    margin: 20px;
+    transition: 1s;
+
+    &:hover {
+        background: #25292e;
+        transform: scale(1.01);
+        transition: 1s;
+     }
+}
+
+.content-main .project div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-main .project div .date-create{
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+.content-main .project div .tittle{
+    color: #FFFFFF;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

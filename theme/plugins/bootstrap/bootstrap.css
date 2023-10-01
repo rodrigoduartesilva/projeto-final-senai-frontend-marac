@@ -3618,7 +3618,7 @@ input[type="button"].btn-block {
 .input-group {
   position: relative;
   display: -ms-flexbox;
-  display: none;
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -ms-flex-align: stretch;
