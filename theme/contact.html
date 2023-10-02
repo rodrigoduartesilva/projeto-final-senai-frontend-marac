@@ -13,6 +13,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="plugins/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Main Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -117,52 +118,63 @@
             <div class="row">
                 <div class="col-md-10">
                     <div class="contact-form bg-dark">
-                        <h1 class="text-white add-letter-space mb-5">Contato</h1>
-                        <form method="POST" class="needs-validation" novalidate>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group mb-5">
-                                        <label for="firstName" class="text-black-300">Seu Nome:</label>
-                                        <input type="text" id="firstName" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Luiz" required>
-                                        <p class="invalid-feedback">É necessário preencher seu nome</p>
+                        <div id="formSpace">
+                            <h1 id="formSubtitle" class="text-white add-letter-space mb-5">Contato</h1>
+                            <form id="contactForm" method="POST" class="needs-validation" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-5">
+                                            <label for="firstName" class="text-black-300">Seu Nome:</label>
+                                            <input type="text" id="firstName" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Luiz" required>
+                                            <div class="feedback-msg">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-5">
+                                            <label for="lastName" class="text-black-300">Seu Sobrenome:</label>
+                                            <input type="text" id="lastName" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Silva" required>
+                                            <div class="feedback-msg">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-5">
+                                            <label for="email" class="text-black-300">Seu E-mail:</label>
+                                            <input type="email" id="email" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="email@mail.com" required>
+                                            <div class="feedback-msg">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-5">
+                                            <label class="text-black-300">Tipo de contato:</label>
+                                            <select class="d-block w-100">
+                                                <option value="1">Proposta Pessoa Física</option>
+                                                <option value="2">Proposta Comercial</option>
+                                                <option value="3">Elogio/Duvidas/Sugestões</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group mb-5">
+                                            <label for="message" class="text-black-300">Mensagem</label>
+                                            <textarea id="textAreaInput" name="message" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Digite sua mensagem..." required></textarea>
+                                            <div class="feedback-msg">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button id="btnSend" type="submit" class="btn btn-sm btn-primary">Enviar <img src="images/arrow-right.png" alt=""></button>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group mb-5">
-                                        <label for="lastName" class="text-black-300">Seu Sobrenome:</label>
-                                        <input type="text" id="lastName" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Silva" required>
-                                        <p class="invalid-feedback">É necessário preencher seu sobrenome</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group mb-5">
-                                        <label for="email" class="text-black-300">Seu E-mail:</label>
-                                        <input type="email" id="email" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="email@mail.com" required>
-                                        <p class="invalid-feedback">É necessário preencher seu e-mail</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group mb-5">
-                                        <label class="text-black-300">Tipo de contato:</label>
-                                        <select class="d-block w-100">
-                                            <option value="1">Proposta Pessoa Física</option>
-                                            <option value="2">Proposta Comercial</option>
-                                            <option value="3">Elogio/Duvidas/Sugestões</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group mb-5">
-                                        <label for="message" class="text-black-300">Mensagem</label>
-                                        <textarea name="message" class="form-control-block form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Digite sua mensagem..." required></textarea>
-                                        <p class="invalid-feedback">O campo da mensagem está vázio</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-sm btn-primary">Enviar <img src="images/arrow-right.png" alt=""></button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -209,6 +221,7 @@
     <script src="plugins/jQuery/jquery.min.js"></script>
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
     <script src="plugins/bootstrap/language-contact.js"></script>
+    <script src="./js/script-contact-form.js"></script>
 
     <!-- Main Script -->
     <script src="js/script.js"></script>
