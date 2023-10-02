@@ -51,3 +51,7 @@ a {
     align-items: center;
     justify-content: space-around;
 }
+
+.lista-item {
+    list-style-type: none;
+}

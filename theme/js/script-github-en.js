@@ -16,8 +16,8 @@ function getApiGitHub() {
                     <a id="container-github" href="${item.html_url}" target="_blank">
                         <div class="project">
                             <div class="align">
-                                <h4 id="tittle" class="tittle">Nome do Repositório: ${item.name}</h4>
-                                <span class="date-create">Criado em: ${Intl.DateTimeFormat('pt-BR').format(new Date(item.created_at))}</span>
+                                <h4 id="tittle" class="tittle">Repository Name: ${item.name}</h4>
+                                <span class="date-create">Creation date: ${Intl.DateTimeFormat('en').format(new Date(item.created_at))}</span>
                             </div>
                         </div>
                     </a>
