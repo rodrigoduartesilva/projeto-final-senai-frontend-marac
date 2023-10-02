@@ -53,6 +53,7 @@ body.loaded {
 }
 
 .btn {
+  display: none;
   font-size: 15px;
   padding: 10px 25px;
   letter-spacing: 0.1em;
